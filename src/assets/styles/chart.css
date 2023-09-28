@@ -1,0 +1,78 @@
+/*Diagram*/
+
+.chart-wrapper {
+    width: 500px;
+    height: 500px;
+    font-size: 16px;
+    margin: auto;
+    animation: diagram-fade 1s;
+}
+
+.chart-ring {
+    stroke: #EBEBEB;
+}
+
+.chart-segment {
+    transform-origin: center;
+    stroke: aqua;
+
+    --percentage: 0;
+    --percentage-left: 0;
+
+    stroke-dashoffset: 25;
+}
+.animate {
+    animation: diagram-fill 2s;
+}
+
+.donut-percent {
+    animation: diagram-fade 1s;
+}
+
+@keyframes diagram-fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes diagram-fill {
+    0% {
+        stroke-dasharray: 0, 100;
+    }
+    100% {
+        stroke-dasharray: var(--percentage), var(--percentage-left);
+    }
+}
+
+.chart-text {
+    font-family: Arial, Helvetica, sans-serif;
+    fill: aqua;
+}
+
+
+.donut-label {
+    font-size: 0.28em;
+    font-weight: 700;
+    line-height: 1;
+    fill: #000;
+    transform: translateY(0.25em);
+}
+
+.consumed-calories {
+    font-size: 0.5em;
+    transform: translateY(0.5em);
+    font-weight: bold;
+}
+
+.daily-norm {
+    font-size: 0.20em;
+    transform: translateY(0.5em);
+    text-align: center;
+    text-anchor: middle;
+    color:#666;
+    fill: #666;
+    animation: donutfadelong 1s;
+}

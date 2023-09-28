@@ -1,0 +1,251 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.d-flex {
+    display: flex;
+}
+.justify-space-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.products-sidebar {
+    height: 100%;
+    width: 30%;
+    margin-left: auto;
+    padding: 14px 10px;
+
+    box-shadow: 0 0 8px #999999;
+}
+
+.products-sidebar__header {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.products-sidebar__actions {
+    width: 100%;
+    padding: 10px;
+}
+
+.settings {
+    width: 90.5%;
+}
+.settings__open-menu {
+    width: 32px;
+    height: 32px;
+    margin-left: auto;
+}
+.settings__open-menu-icon {
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+    transition: all .4s;
+}
+.settings__open-menu-icon:hover {
+    transform: rotate(180deg);
+}
+.settings__menu {
+    width: 250px;
+    height: 100px;
+    padding: 10px;
+
+    position: absolute;
+    right: 72px;
+    top: 102px;
+    z-index: 4;
+
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #4d4d4d;
+}
+.settings__menu-title {
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.actions__deleting {
+    margin-bottom: 25px;
+}
+.actions__target-calories {
+    margin-bottom: 15px;
+}
+.actions__sorting {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.actions__search {
+
+}
+
+.search-input {
+    width: 275px;
+    height: 30px;
+    padding: 6px 10px;
+    border: none;
+
+    font-size: 20px;
+    border-radius: 18px;
+    box-shadow: 0 0 5px #4d4d4d;
+    outline: none;
+}
+
+.btn {
+    min-width: 135px;
+    padding: 6px 8px;
+
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+
+    transition: all .3s;
+}
+
+.btn-add-product {
+    width: 46px;
+    height: 46px;
+    margin-right: 25px;
+    border: none;
+
+    border-radius: 50px;
+    font-size: 26px;
+    cursor: pointer;
+    
+    transition: all .4s;
+}
+.btn-add-product:hover {
+    transform: rotate(180deg);
+}
+
+.btn-clear-data {
+    border: none;
+    color: firebrick;
+}
+.btn-clear-data:hover {
+    background-color: firebrick;
+    color: #fff;
+}
+
+.btn-remove-all-products {
+    border: 2px solid firebrick;
+    color: firebrick;
+}
+.btn-remove-all-products:hover {
+    background-color: firebrick;
+    color: #fff;
+}
+
+.btn-target-calories {
+    border: 2px solid darkorange;
+    color: darkorange;
+}
+.btn-target-calories:hover {
+    background-color: darkorange;
+    color: #fff;
+}
+.btn-sort-list {
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn-sort-list:hover {
+    text-decoration: underline;
+    color: darkorange;
+}
+
+
+.products-sidebar__list {
+    width: 100%;
+    height: 520px;
+    padding: 15px 10px 0 0;
+    border-top: 2px solid #cbcbcb;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    overflow-y: scroll;
+}
+
+.product-card {
+    width: 75%;
+    height: 35px;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #dbdbdb;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 12px;
+    box-shadow: 0 0 5px #c6c6c6;
+
+    transition: width .3s;
+}
+.product-card:hover {
+    width: 85%;
+}
+
+.product-card__info {
+    font-size: 18px;
+}
+
+.title {
+    font-weight: 700;
+    margin-right: 10px;
+}
+.calories {
+
+}
+
+.product-card__actions {
+
+}
+
+.btn-delete-product {
+    width: 32px;
+    height: 32px;
+    padding: 6px 6px;
+    border: none;
+
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn-delete-product:hover {
+    background-color: #e3e3e3;
+}
+.btn-delete-product img {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
